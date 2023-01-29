@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-HelpSheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="prism.css" class="css">
+</head>
+<body>
+    <nav>
+        <span class="logo"><img src="js.jpeg" alt="logo-image"></span>
+        <div class="centercontent">
+            JavaScript HelpSheet
+        </div>
+    </nav>
+    <div class="container">
+
+        <ol>
+            <li><h3>JavaScript Can Change HTML Content</h3></li>
+            <pre class="language-js"><code>document.getElementById("demo").innerHTML = "Hello JavaScript";</code></pre>
+        
+            <br><li>JavaScript Can Change HTML Styles (CSS)</li>
+            <pre class="language-js"><code>document.getElementById("demo").style.fontSize = "35px";</code></pre>
+
+            <br><li>JavaScript Can Hide HTML Elements</li>
+            <pre class="language-js"><code>document.getElementById("demo").style.display = "none";</code></pre>
+            
+            <br><li>JavaScript Can Show HTML Elements</li>
+            <pre class="language-js"><code>document.getElementById("demo").style.display = "block";</code></pre>
+
+            <br><li>JavaScript Functions </li>
+            <pre class="language-js"><code>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}</code></pre>
+<br>
+
+            <br><li>Using innerHTML</li>
+            <pre class="language-js"><code>document.getElementById("demo").innerHTML = 5 + 6;</code></pre>
+
+            <br><li>Using document.write()</li>
+            <pre class="language-js"><code>document.write(5 + 6);</code></pre>
+
+            <br><li>Using window.alert()</li>
+            <pre class="language-js"><code>window.alert(5 + 6);</code></pre>
+
+            <br><li>Using console.log()</li>
+            <pre class="language-js"><code>console.log(5 + 6);</code></pre>
+
+            <br><li>JavaScript Statements</li>
+            <pre class="language-js"><code>
+let x, y, z;    // Statement 1
+x = 5;          // Statement 2
+y = 6;          // Statement 3
+z = x + y;      // Statement 4</code></pre>
+            
+            <br><li>String Length</li>
+            <pre class="language-js"><code>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;</code></pre>
+
+            <br><li>JavaScript String slice()</li>
+            <pre class="language-js"><code>
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);</code></pre>
+
+            <br><li>JavaScript String substring()</li>
+            <pre class="language-js"><code>
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+            </code></pre>
+
+            <br><li>JavaScript String substr()</li>
+            <pre class="language-js"><code>
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7, 6);
+
+            </code></pre>
+
+            <br><li>Replacing String Content</li>
+            <pre class="language-js"><code>
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+            </code></pre>
+
+            <br><li>JavaScript String ReplaceAll()</li>
+            <pre class="language-js"><code>
+text = text.replaceAll("Cats","Dogs");
+text = text.replaceAll("cats","dogs");
+            </code></pre>
+
+            <br><li>Converting to Upper and Lower Case</li>
+            <pre class="language-js"><code>
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+let text2 = text1.toLowerCase();
+            </code></pre>
+
+            <br><li>JavaScript String concat()</li>
+            <pre class="language-js"><code>
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+            </code></pre>
+
+            <br><li>JavaScript String trim()</li>
+            <pre class="language-js"><code>
+let text1 = "      Hello World!      ";
+let text2 = text1.trim();
+            </code></pre>
+        
+            <br><li>JavaScript String trimStart()</li>
+            <pre class="language-js"><code>
+let text1 = "     Hello World!     ";
+let text2 = text1.trimStart();
+            </code></pre>
+
+            <br><li>JavaScript String trimEnd()</li>
+            <pre class="language-js"><code>
+let text1 = "     Hello World!     ";
+let text2 = text1.trimEnd();
+            </code></pre>
+            
+            <br><li>JavaScript String padStart()</li>
+            <pre class="language-js"><code>
+let text = "5";
+let padded = text.padStart(4,"x");
+            </code></pre>
+
+            <br><li>JavaScript String padEnd()</li>
+            <pre class="language-js"><code>
+let text = "5";
+let padded = text.padEnd(4,"0");
+}</code></pre>
+<br>
+            <li><h3>JavaScript String charAt()</h3></li>
+            <pre class="language-js"><code>
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+            </code></pre>
+
+            <br><li>JavaScript String charCodeAt()</li>
+            <pre class="language-js"><code>
+let text = "HELLO WORLD";
+let char = text.charCodeAt(0);
+            </code></pre>
+
+            <br><li>JavaScript String split()</li>
+            <pre class="language-js"><code>
+text.split(",")    // Split on commas
+text.split(" ")    // Split on spaces
+text.split("|")    // Split on pipe
+            </code></pre>
+
+            <br><li>JavaScript String indexOf()</li>
+            <pre class="language-js"><code>
+let str = "Please locate where 'locate' occurs!";
+str.indexOf("locate");
+            </code></pre>
+
+            <br><li>JavaScript String lastIndexOf()</li>
+            <pre class="language-js"><code>
+let text = "Please locate where 'locate' occurs!";
+text.lastIndexOf("locate");
+            </code></pre>
+            <br>
+
+            <li><h3>JavaScript String search()</h3></li>
+            <pre class="language-js"><code>
+let str = "Please locate where 'locate' occurs!";
+str.search("locate");
+            </code></pre>
+        
+            <br><li>JavaScript String match()</li>
+            <pre class="language-js"><code>
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match("ain");
+</code></pre>
+
+            <br><li>JavaScript String matchAll()</li>
+            <pre class="language-js"><code>const iterator = text.matchAll("Cats");</code></pre>
+            
+            <br><li>JavaScript String includes()</li>
+            <pre class="language-js"><code>
+let text = "Hello world, welcome to the universe.";
+text.includes("world");
+            </code></pre>
+
+            <br><li>JavaScript String startsWith()</li>
+            <pre class="language-js"><code>
+let text = "Hello world, welcome to the universe.";
+text.startsWith("Hello");
+</code></pre>
+            <br>
+            <li><h3>JavaScript String endsWith()</h3></li>
+            <pre class="language-js"><code>
+let text = "John Doe";
+text.endsWith("Doe");
+            </code></pre>
+
+            <br><li>Expression Substitution</li>
+            <pre class="language-js"><code>
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+            </code></pre>
+
+            <br><li>HTML Templates</li>
+            <pre class="language-js"><code>
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+    html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+            </code></pre>
+
+            <br><li>How to Create a BigInt</li>
+            <pre class="language-js"><code>
+let x = 1234567890123456789012345n;
+let y = BigInt(1234567890123456789012345)
+            </code></pre>
+
+            <li><h3>BigInt: A new JavaScript Datatype</h3></li>
+            <pre class="language-js"><code>
+let x = BigInt(999999999999999);
+let type = typeof x;
+            </code></pre>
+        
+            <br><li>The toString() Method</li>
+            <pre class="language-js"><code>
+let x = 123;
+x.toString();
+(123).toString();
+(100 + 23).toString();
+            </code></pre>
+
+            <br><li>The toExponential() Method</li>
+            <pre class="language-js"><code>
+let x = 9.656;
+x.toExponential(2);
+x.toExponential(4);
+x.toExponential(6);
+            </code></pre>
+            
+            <br><li>The toFixed() Method</li>
+            <pre class="language-js"><code>
+let x = 9.656;
+x.toFixed(0);
+x.toFixed(2);
+x.toFixed(4);
+x.toFixed(6);
+            </code></pre>
+
+            <li><h3>The toPrecision() Method</h3></li>
+            <pre class="language-js"><code>
+let x = 9.656;
+x.toPrecision();
+x.toPrecision(2);
+x.toPrecision(4);
+x.toPrecision(6);
+            </code></pre>
+        
+            <br><li>The valueOf() Method</li>
+            <pre class="language-js"><code>
+let x = 123;
+x.valueOf();
+(123).valueOf();
+(100 + 23).valueOf();
+            </code></pre>
+
+            <br><li>The Number() Method</li>
+            <pre class="language-js"><code>
+Number(true);
+Number(false);
+Number("10");
+Number("  10");
+Number("10  ");
+Number(" 10  ");
+Number("10.33");
+Number("10,33");
+Number("10 33");
+Number("John");
+            </code></pre>
+            
+            <br><li>The parseInt() Method</li>
+            <pre class="language-js"><code>
+parseInt("-10");
+parseInt("-10.33");
+parseInt("10");
+parseInt("10.33");
+parseInt("10 20 30");
+parseInt("10 years");
+parseInt("years 10");
+            </code></pre>
+
+            <li><h3>The parseFloat() Method</h3></li>
+            <pre class="language-js"><code>
+parseFloat("10");
+parseFloat("10.33");
+parseFloat("10 20 30");
+parseFloat("10 years");
+parseFloat("years 10");
+            </code></pre>
+        
+            <br><li>The Number.isInteger() Method</li>
+            <pre class="language-js"><code>
+Number.isInteger(10);
+Number.isInteger(10.5);
+            </code></pre>
+
+            <br><li>The Number.isSafeInteger() Method</li>
+            <pre class="language-js"><code>
+Number.isSafeInteger(10);
+Number.isSafeInteger(12345678901234567890);
+            </code></pre>
+            
+            <br><li>JavaScript EPSILON</li>
+            <pre class="language-js"><code>let x = Number.EPSILON;</code></pre>
+
+            <li>JavaScript MAX_VALUE</li>
+            <pre class="language-js"><code>let x = Number.MAX_VALUE;</code></pre>
+        
+            <br><li>JavaScript MIN_VALUE</li>
+            <pre class="language-js"><code>let x = Number.MIN_VALUE;</code></pre>
+
+            <br><li>JavaScript MAX_SAFE_INTEGER</li>
+            <pre class="language-js"><code>let x = Number.MAX_SAFE_INTEGER;</code></pre>
+            
+            <br><li>JavaScript MIN_SAFE_INTEGER</li>
+            <pre class="language-js"><code>let x = Number.MIN_SAFE_INTEGER;</code></pre>
+
+            <br><li>JavaScript POSITIVE_INFINITY</li>
+            <pre class="language-js"><code>let x = Number.POSITIVE_INFINITY;</code></pre>
+
+            <li><h3>JavaScript NEGATIVE_INFINITY</h3></li>
+            <pre class="language-js"><code>let x = Number.NEGATIVE_INFINITY;</code></pre>
+        
+            <br><li>JavaScript NaN - Not a Number</li>
+            <pre class="language-js"><code>let x = Number.NaN;</code></pre>
+
+            <br><li>JavaScript Arrays</li>
+            <pre class="language-js"><code>const array_name = [item1, item2, ...];    </code></pre>
+            
+            <br><li>Access the Full Array</li>
+            <pre class="language-js"><code>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+            </code></pre>
+
+            <br><li>Looping Array Elements</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+    text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+            </code></pre>
+
+            <li><h3>Adding Array Elements</h3></li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon");
+            </code></pre>
+        
+            <br><li>Converting Arrays to Strings</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+            </code></pre>
+
+            <br><li>JavaScript Array pop()</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+            </code></pre>
+            
+            <br><li>JavaScript Array push()</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+            </code></pre>
+
+            <br><li>JavaScript Array shift()</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+            </code></pre>
+
+            <li><h3>JavaScript Array unshift()</h3></li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");</code></pre>
+        
+            <br><li>Merging (Concatenating) Arrays</li>
+            <pre class="language-js"><code>
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+            </code></pre>
+
+            <br><li>JavaScript Array slice()</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+            </code></pre>
+            
+            <br><li>Sorting an Array</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+            </code></pre>
+
+            <br><li>Reversing an Array</li>
+            <pre class="language-js"><code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+fruits.reverse();
+            </code></pre>
+
+            <br><li>Numeric Sort</li>
+            <pre class="language-js"><code>
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+            </code></pre>
+            
+            <br><li>The Compare Function</li>
+            <pre class="language-js"><code>function(a, b){return a - b}</code></pre>
+
+            <br><li>Using Math.max() on an Array</li>
+            <pre class="language-js"><code>
+function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+    }
+            </code></pre>
+
+            <li><h3>Using Math.min() on an Array</h3></li>
+            <pre class="language-js"><code>
+function myArrayMin(arr) {
+    return Math.min.apply(null, arr);
+    }
+            </code></pre>
+        
+            <br><li>My Min / Max JavaScript Methods</li>
+            <pre class="language-js"><code>
+function myArrayMax(arr) {
+    let len = arr.length;
+    let max = -Infinity;
+    while (len--) {
+        if (arr[len] > max) {
+        max = arr[len];
+        }
+    }
+    return max;
+    }
+            </code></pre>
+
+            <br><li>JavaScript Array map()</li>
+            <pre class="language-js"><code>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+    return value * 2;
+}
+            </code></pre>
+
+
+            <li><h3>JavaScript Array filter()</h3></li>
+            <pre class="language-js"><code>
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+function myFunction(value, index, array) {
+    return value > 18;
+}
+            </code></pre>
+        
+            <br><li>JavaScript Array reduce()</li>
+            <pre class="language-js"><code>
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);
+
+function myFunction(total, value, index, array) {
+    return total + value;
+}
+            </code></pre>
+
+            <br><li>JavaScript Array reduceRight()</li>
+            <pre class="language-js"><code>
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduceRight(myFunction);
+
+function myFunction(total, value, index, array) {
+    return total + value;
+}
+            </code></pre>
+            
+            <br><li>JavaScript Array every()</li>
+            <pre class="language-js"><code>
+const numbers = [45, 4, 9, 16, 25];
+let allOver18 = numbers.every(myFunction);
+
+function myFunction(value, index, array) {
+    return value > 18;
+}
+            </code></pre>
+
+            <br><li>JavaScript Array some()</li>
+            <pre class="language-js"><code>
+const numbers = [45, 4, 9, 16, 25];
+let someOver18 = numbers.some(myFunction);
+
+function myFunction(value, index, array) {
+    return value > 18;
+}
+            </code></pre>
+
+            <li><h3>Creating Date Objects</h3></li>
+            <pre class="language-js"><code>
+new Date()
+new Date(date string)
+
+new Date(year,month)
+new Date(year,month,day)
+new Date(year,month,day,hours)
+new Date(year,month,day,hours,minutes)
+new Date(year,month,day,hours,minutes,seconds)
+new Date(year,month,day,hours,minutes,seconds,ms)
+
+            </code></pre>
+        
+            <br><li>The getFullYear() Method</li>
+            <pre class="language-js"><code>
+const d = new Date("2021-03-25");
+d.getFullYear();
+            </code></pre>
+
+            <br><li>The getMonth() Method</li>
+            <pre class="language-js"><code>
+const d = new Date("2021-03-25");
+d.getMonth();</code></pre>
+
+        <li>The getHours() Method</li>
+        <pre class="language-js"><code>
+const d = new Date("2021-03-25");
+d.getHours();
+        </code></pre>
+
+        <br><li>The getMinutes() Method</li>
+        <pre class="language-js"><code>
+const d = new Date("2021-03-25");
+d.getMinutes();
+        </code></pre>
+
+        <br><li>The getSeconds() Method</li>
+        <pre class="language-js"><code>
+const d = new Date("2021-03-25");
+d.getSeconds();
+        </code></pre>
+
+        <br><li>The getDay() Method</li>
+        <pre class="language-js"><code>
+const d = new Date("2021-03-25");
+d.getDay();
+        </code></pre>
+
+        <br><li>The getTime() Method</li>
+        <pre class="language-js"><code>
+const d = new Date("1970-01-01");
+d.getTime();
+        </code></pre>
+
+        <li><h3>The Date.now() Method</h3></li>
+        <pre class="language-js"><code>
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+
+let years = Math.round(Date.now() / year);
+        </code></pre>
+
+        <br><li>The setFullYear() Method</li>
+        <pre class="language-js"><code>
+const d = new Date();
+d.setFullYear(2020);
+        </code></pre>
+
+        <br><li>The setMonth() Method</li>
+        <pre class="language-js"><code>
+const d = new Date();
+d.setMonth(11);
+        </code></pre>
+
+        <li>The setDate() Method</li>
+        <pre class="language-js"><code>
+const d = new Date();
+d.setDate(15);
+        </code></pre>
+    
+        <br><li>The setHours() Method</li>
+        <pre class="language-js"><code>
+const d = new Date();
+d.setHours(22);
+        </code></pre>
+
+        <br><li>setSeconds()</li>
+        <pre class="language-js"><code>
+const d = new Date();
+d.setSeconds(30);
+        </code></pre>
+        
+        <br><li>Compare Dates</li>
+        <pre class="language-js"><code>
+let text = "";
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+    text = "Today is before January 14, 2100.";
+} else {
+    text = "Today is after January 14, 2100.";
+}
+        </code></pre>
+
+        <br><li>Math.round()</li>
+        <pre class="language-js"><code>Math.round(4.6);</code></pre>
+
+        <li><h3>Math.floor()</h3></li>
+        <pre class="language-js"><code>
+Math.floor(4.9);
+Math.floor(4.7);
+Math.floor(4.4);
+Math.floor(4.2);
+Math.floor(-4.2);
+        </code></pre>
+    
+        <br><li>Math.ceil()</li>
+        <pre class="language-js"><code>
+Math.ceil(4.9);
+Math.ceil(4.7);
+Math.ceil(4.4);
+Math.ceil(4.2);
+Math.ceil(-4.2);
+        </code></pre>
+
+        <br><li>Math.trunc()</li>
+        <pre class="language-js"><code>
+Math.trunc(4.9);
+Math.trunc(4.7);
+Math.trunc(4.4);
+Math.trunc(4.2);
+Math.trunc(-4.2);
+        </code></pre>
+    </ol>
+
+      <ol start="100">
+        <li>Math.sign()</li>
+        <pre class="language-js"><code>
+Math.sign(-4);
+Math.sign(0);
+Math.sign(4);
+        </code></pre>
+    
+        <br><li>Math.pow()</li>
+        <pre class="language-js"><code>Math.pow(8, 2);</code></pre>
+
+        <br><li>Math.sqrt()</li>
+        <pre class="language-js"><code>Math.sqrt(64);</code></pre>
+        
+        <br><li>Math.abs()</li>
+        <pre class="language-js"><code>Math.abs(-4.7);</code></pre>
+
+        <br><li>Math.sin()</li>
+        <pre class="language-js"><code>Math.sin(90 * Math.PI / 180); </code></pre>
+
+        <li><h3>Math.cos()</h3></li>
+        <pre class="language-js"><code>Math.cos(0 * Math.PI / 180); </code></pre>
+    
+        <br><li>The Math.log() Method</li>
+        <pre class="language-js"><code>Math.log(1);</code></pre>
+
+        <br><li>The Math.log2() Method</li>
+        <pre class="language-js"><code>Math.log2(8);</code></pre>
+        
+    </code></pre>
+</ol>
+    </div>
+</body>
+</html>
